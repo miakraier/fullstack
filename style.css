@@ -1,0 +1,13 @@
+span {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+span.color {
+    background-color: green;
+}
+
+span.color1 {
+    background-color: pink;
+}

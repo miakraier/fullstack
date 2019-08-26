@@ -1,0 +1,22 @@
+body{
+    height:100vh;
+    width:100vw;
+}
+
+#register{
+    background-color: mediumseagreen;
+    padding-top: 130px;
+    
+}
+#result{
+    background-color: gray;
+    padding-top: 200px;
+    text-align: center;
+    color: white
+}
+.labels{
+    font-weight: bold;
+}
+#makewhite{
+    color: white;
+}

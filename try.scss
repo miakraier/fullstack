@@ -1,0 +1,8 @@
+$backer: lightblue;
+$big: 30px;
+$solidblack: black solid 1px;
+header, footer {background-color: $backer;}
+div {
+    main {font-size: $big;}
+article {border: $solidblack;}
+}

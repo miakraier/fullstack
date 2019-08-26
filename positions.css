@@ -1,0 +1,26 @@
+div {border: solid black 2px;}
+.fixed {position: fixed;
+    right: 5px;
+    bottom: 5px;
+height: 100px;
+width: 50px;
+}
+.big {position: relative;
+left: 5px;
+top: 5px;
+height: 30px;
+width: 200px;}
+#small {position: relative;
+    left: 120px;
+    top: -5px;
+    height: 30px;
+    width: 70px;}
+    #smaller {position: absolute;
+    left: 120px;
+top: 105px;
+height: 25px;
+width: 50px;}
+#stam {background-color: blue;
+height: 50px;
+width: 200px;
+margin: 5px;}

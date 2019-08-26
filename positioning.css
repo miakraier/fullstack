@@ -1,0 +1,16 @@
+div {border: solid black 2px;}
+.fixed {position: fixed;
+    right: 5px;
+    bottom: 5px;
+height: 100px;
+width: 50px;
+}
+#image {width: 20px;
+height: 20px;
+position: absolute;
+right: 0px;
+top: 0px;}
+.width { display: inline-block;
+    position: relative;
+width: 200px;
+height: 100px;}

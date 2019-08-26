@@ -1,0 +1,87 @@
+html, body, .bg{
+    width: 100v4w;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    color: cornflowerblue;
+    font-family: 'Bitter', serif;
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    animation: titlemove;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+     }
+
+.bg{
+    background-image:url("cactus6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 2s linear;
+       }
+
+@keyframes titlemove{
+    0%{
+        top: -50%;}
+    100%{
+        top: 45%;;
+        }
+    }
+
+    .btn{
+    color: cornflowerblue;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    padding: 1rem 2rem;
+    border:cornflowerblue 3px solid;
+    margin-top: 30px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+   }
+
+    .btn:hover{
+        transform: rotateY(180deg);
+    }
+    
+    @keyframes btn{
+        0%{opacity: 0;}
+        100%{ opacity: 1;}
+    }
+    
+    .sides{
+        background: none;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        color: dimgray;
+        
+        }
+
+    #left{
+        left: 5px;
+            }
+
+    #right{
+        right: 5px;
+    }

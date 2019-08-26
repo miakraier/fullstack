@@ -1,0 +1,7 @@
+body {background-color: red;}
+$backer: yellow;
+$small: 10px;
+$bigger: 20px;
+.firstdiv {background-color: $backer;
+font-size: $small;}
+.seconddiv {font-size: $bigger;}

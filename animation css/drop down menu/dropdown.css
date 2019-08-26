@@ -1,0 +1,124 @@
+nav{
+    padding: 50px;
+    text-align: center
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background-color:  lightskyblue;
+    border-radius: 5px;
+}
+li{
+    float: left;
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: lightskyblue;
+    cursor: pointer;
+}
+li:hover{
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+ul.dropit{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+}
+li{
+    background-color: cornflowerblue;
+    color: white
+}
+li:hover{
+    background-color:lightskyblue;
+}
+li:last-child{
+    border-radius: 0px 0px
+    5px 5px;
+}
+/*controling nav bars*/
+ul.dropit li {
+display: none;
+}
+li:hover > ul.dropit li {
+    display: block;
+}
+/*menu-s*/
+li:hover > ul.dropit.menu-s {
+perspective: 1000px;}
+    li {
+    opacity: 0;
+    animation-name: menu-s;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards
+    }
+@keyframes menu-s {
+    0%{
+        opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);}
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px);}
+}
+/*menu-e*/
+li:hover > ul.dropit.menu-e {
+    perspective: 1000px;}
+        li {
+        opacity: 0;
+        animation-name: menu-e;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards
+        }
+    @keyframes menu-e {
+        0%{
+            opacity: 0;
+        transform: rotateY(-90deg) translateY(30px);}
+        100%{
+            opacity: 1;
+            transform: rotateY(0deg) translateY(0px);}
+    }
+    /*menu-h*/
+    li:hover > ul.dropit.menu-h {
+        perspective: 1000px;}
+            li {
+            opacity: 0;
+            animation-name: menu-h;
+            animation-duration: 300ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards
+            }
+        @keyframes menu-h {
+            0%{
+                opacity: 0;
+            transform: rotateY(-90deg) translateY(30px);}
+            100%{
+                opacity: 1;
+                transform: rotateY(0deg) translateY(0px);}
+        }
+        /*menu-f*/
+        li:hover > ul.dropit.menu-f {
+            perspective: 1000px;}
+                li {
+                opacity: 0;
+                animation-name: menu-f;
+                animation-duration: 300ms;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards
+                }
+            @keyframes menu-f {
+                0%{
+                    opacity: 0;
+                transform: rotateY(-90deg) translateY(30px);}
+                100%{
+                    opacity: 1;
+                    transform: rotateY(0deg) translateY(0px);}
+            }

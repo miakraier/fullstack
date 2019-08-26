@@ -1,0 +1,12 @@
+header, footer {
+  background-color: lightblue;
+}
+
+div main {
+  font-size: 30px;
+}
+div article {
+  border: black solid 1px;
+}
+
+/*# sourceMappingURL=try.css.map */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>create element with js</title>
+</head>
+
+<body>
+    <div class="f">
+        <div class="s">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente magnam cupiditate! Eius
+                quisquam dicta facere tempora perspiciatis quis fugit maiores vitae quo, cum ipsa ex architecto iusto
+                accusantium autem laboriosam non voluptate accusamus optio molestias maxime, vel assumenda. Aperiam,
+                eius blanditiis sit ullam illum porro dignissimos delectus accusantium ducimus.
+            </p>
+        </div>
+    </div>
+    <script>
+        let elm = document.createElement('h1')
+        let fdiv=document.querySelector('.f')
+        let sdiv= document.querySelector('.s')
+        elm.textContent= "do you see me?"
+        elm.style.color= "red"
+        fdiv.insertBefore(elm, sdiv)
+        elm.style.textAlign="center"
+    </script>
+</body>
+
+</html>
