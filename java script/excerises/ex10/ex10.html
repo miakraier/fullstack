@@ -24,12 +24,14 @@
                 <label for="exampleInputPassword1">Grades</label>
                 <input type="text" class="form-control" id="grades" placeholder="Grades">
             </div>
-            <button type="button" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-primary" id="btn2">Calculate</button>    
+            <button type="button" class="btn btn-primary" id="btn">Submit</button>
+            <button type="button" class="btn btn-primary" id="btn2">Calculate</button>
         </form>
-        <div class="jumbotron">
-            <h1 class="display-4" id="jname"></h1>
-            <p class="lead" id="jcontent"></p>
+        <div id="result">
+            <div class="jumbotron">
+                <h1 class="display-4" id="student"></h1>
+                <p class="lead" id="present"></p>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
