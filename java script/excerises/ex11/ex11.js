@@ -1,16 +1,11 @@
-let main=document.getElementById("main")
-let btn=document.getElementById("btn")
+let pop=document.getElementById("pop")
+let wrap=document.getElementById("wrap")
+function show(){
+  pop.style.visibility="visible"
+}
+function hide(){
+  pop.style.visibility="hidden"
+}
 
-main.addEventListener("mouseenter", function (event) {
-    event.target.style.opacity="1"});
-
-setTimeout(function() {
-    event.target.style.opacity ="0";
-  }, 500);
-
-main.addEventListener("mouseleave", function (event) {
-    event.target.style.opacity="0"});
-
-setTimeout(function() {
-    event.target.style.opacity ="1";
-  }, 500);
+wrap.addEventListener("mouseenter", show)
+wrap.addEventListener("mouseleave", hide)
