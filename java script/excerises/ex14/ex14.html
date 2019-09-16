@@ -2,27 +2,36 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="ex14.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="test.css">
-    <title>test</title>
+    <title>backgrounds</title>
 </head>
 
-<body>
-    <div class="container" id="main">
-        <form>
-            <div class="form-group">
-                <label for="radius">radius</label>
-                <input type="number" class="form-control" id="radius" placeholder="Enter radius">
+<body id="color">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" id="green">
+                        <a class="nav-link" href="#">green</a>
+                    </li>
+                    <li class="nav-item" id="purple">
+                        <a class="nav-link" href="#">purple</a>
+                    </li>
+                    <li class="nav-item" id="blue">
+                        <a class="nav-link" href="#">blue</a>
+                    </li>
+                    <li class="nav-item" id="pink">
+                        <a class="nav-link" href="#">pink</a>
+                    </li>
+                </ul>
             </div>
-            <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
-        </form>
-        <span id="volume"></span>
-        <div id="d"></div>
-            <canvas id="cnv" width="800px" height="330px"></canvas>
-            <button type="button" class="btn btn-primary" id="clean">clean canvas</button>
-    </div>
-    <script src="test.js"></script>
+        </nav>
+    </header>
+
+    <script src="ex14.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

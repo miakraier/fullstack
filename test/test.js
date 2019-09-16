@@ -3,17 +3,19 @@ let draw=canvas.getContext("2d")
 let rdaius=document.getElementById("radius")
 let calculate=document.getElementById("calculate")
 let cln=document.getElementById("clean")
-let v= document.getElementById("volume")
+let vol= document.getElementById("volume")
+let div=document.getElementById("d")
+let v
 function circle(){
     if(radius.value<=(canvas.width/2) && radius.value<=(canvas.height/2)){
     draw.beginPath();
     draw.arc(canvas.width/2, canvas.height/2, radius.value ,0 , 2 * Math.PI);
     draw.stroke();
-    v = (4/3) * Math.PI * Math.pow(radius, 3);
+    v = (4/3) * Math.PI * Math.pow(radius.value, 3);
     v = v.toFixed(4);
-    v.innerHtml=v.value
+    vol.innerText="Volume: " + v
     }else{
-        canvas.innerHTML="radius may be too big or not corect"
+    div.innerText="radius may be too big or not a corect number!"
     }
 }
     calculate.addEventListener("click", circle)

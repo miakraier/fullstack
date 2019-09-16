@@ -7,6 +7,14 @@
         {
             "type": "chrome",
             "request": "launch",
+            "name": "project1",
+            "url": "file:///D:/visual%20studio%20code/java%20script/project/project.html",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "type": "chrome",
+            "request": "launch",
             "name": "navbar",
             "url": "D:\\visual studio code\\java script\\excerises\\navbar\\navbar.html",
             "webRoot": "${workspaceFolder}"
