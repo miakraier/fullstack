@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkseagreen;
+}
+#main{
+    position: relative;
+    margin-top: 2%;
+    width: 60%;
+    height: 85%;
+}
+#clean{
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+        }
+#cnv{
+    background-color: white;
+    border-radius: 10% 10%;
+    }
+#volume{
+    background-color: white;
+    left: -160px;
+    top: 150px;
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    border-radius: 10% 10%;
+}
+#d{
+    font-size: 20px;
+    background-color: darkgreen;
+    margin: 2%;
+    text-align: center;
+    display: inline-block;
+    }

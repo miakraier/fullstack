@@ -1,0 +1,35 @@
+#cp{
+    position: relative;
+    height: 220px;
+padding: 15px;
+background-color: lightskyblue;
+}
+
+.input{
+    padding: 5px;
+    margin: 5px;
+    }
+#pw{
+    position: absolute;
+    display: inline-block;
+   width: 45%;
+}
+#pt{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    width: 45%;   
+}
+#pb{
+    position: absolute;
+    top: 35%;
+    width: 89%;
+    height: 55%;
+}
+#submit{
+    position: absolute;
+    display: inline-block;
+    right: 1%;
+    bottom: 7%;
+    width: 7%;
+}

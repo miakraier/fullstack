@@ -1,35 +1,35 @@
-let req=new XMLHttpRequest();
-req.onreadystatechange=() =>{
-    if(req.readyState===4 && req.status===200){
-       let img= document.createElement("img")
-       img.setAttribute("src", JSON.parse(req.responseText).url)
-       // document.write(JSON.parse(req.responseText).value)
-       document.body.appendChild(img)
-    }else{
-        console.log("state is: "+ req.readyState)
+let req = new XMLHttpRequest();
+req.onreadystatechange = () => {
+    if (req.readyState === 4 && req.status === 200) {
+        let img = document.createElement("img")
+        img.setAttribute("src", JSON.parse(req.responseText).url)
+        // document.write(JSON.parse(req.responseText).value)
+        document.body.appendChild(img)
+    } else {
+        console.log("state is: " + req.readyState)
     }
 }
 req.open('GET', 'https://meme-api.herokuapp.com/gimme');
 req.send();
 
 //----get function without jquery
-let get= (url,callback) =>{
+let get = (url, callback) => {
     //create new XHR object
-const xhr=new XMLHttpRequest()
+    const xhr = new XMLHttpRequest()
     //define ready-state-change function
-xhr.onreadystatechange= () =>{
-    if(xhr.readyState===4 && xhr.status===200){
-        callback(JSON.parse(xhr.responseText))
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            callback(JSON.parse(xhr.responseText))
+        }
     }
-}
     //open the request
-xhr.open('GET', url)
+    xhr.open('GET', url)
     //send the request
-xhr.send()
+    xhr.send()
 }
-get('https://meme-api.herokuapp.com/gimme', res =>{
+get('https://meme-api.herokuapp.com/gimme', res => {
     console.log(res.url)
-    let img= document.createElement("img")
+    let img = document.createElement("img")
     img.setAttribute("src", res.url)
     document.body.appendChild(img)
 })
@@ -37,11 +37,15 @@ get('https://meme-api.herokuapp.com/gimme', res =>{
 
 //post
 
-$.post('https://jsonplaceholder.typicode.com/posts', 
-{title: "stam",
-body:"issa first",
-userId: 1
-}, res => {
-    console.log(res)
+$.post('https://jsonplaceholder.typicode.com/posts',
+    {
+        method: 'POST',
+        body: JSON.stringify({
+            title: "stam",
+            body: "issa first",
+            userId: 1
+        }),
+headers:{
+    "content-type": "application/json; charset=UTF-8"
 }
-)
+})

@@ -1,0 +1,77 @@
+#bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bgnew.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+.title{
+    position: relative;
+    color: aqua;
+    font-size: 2.5rem;
+    font-family: 'Monoton', cursive;
+}
+#maint{
+    line-height: 1.2;
+    position: relative;
+    animation: goingdown;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes goingdown{
+    0%{top: -100px;}
+    100%{top: 0px;}
+}
+
+#myTab{
+    height: 20%;
+}
+.nav-item{
+    width: 33%;
+}
+.nav-link{
+    height: 100%;
+font-size: 1.5rem;
+text-align: center;
+color: darkcyan;
+font-family: 'Notable', sans-serif;
+}
+.container{
+    background-color: #fff;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 2px lightgray solid;
+    border-radius: 2% 2%;
+    width: 80% !important;
+    }
+.sform{
+    margin-right: 3%;
+    font-family: 'Notable', sans-serif;
+    }
+.card{
+    margin: 1%;
+    display: inline-block !important
+        }
+.card-body{
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+        }
+.card-header{
+    font-size: 1.3rem;   
+        }
+.shownow{
+    margin-top: 3%;
+        }
+.tb{
+    left: 80%;
+    width: 20%;
+    height: 10%;
+        }
+.infoOpen{
+    height: 20%;   
+        }

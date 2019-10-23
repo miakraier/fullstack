@@ -1,4 +1,4 @@
-/*$(ELM).someFunction()
+$(ELM).someFunction()
 // another way to write
 jQuery(ELM).someFunction()
 //--------------------------
@@ -23,7 +23,7 @@ $(function () {
     })
 })
 //hide and show events
-$(function(){let h1=$("h1")
+/*$(function(){let h1=$("h1")
 console.log(h1)
 $("#btn").click(function(){
     $("h1").show()

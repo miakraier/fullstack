@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.titles{
+    font-size: 20px;
+margin-top: 10px;
+}
+#idI{
+    width: 90%;
+}
+#nameI{
+    width: 81%;  
+}
+#salaryI{
+    width: 81%;
+}
+#ageI{
+  width: 60%;
+}
+.sform{
+    position: relative;
+    margin-top: 5%;
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 5% 5%;
+    width: 40%;
+    display: inline-block;
+}
+#search{
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+    font-size: 1.5rem;
+}
+#showres{
+    margin-top: 5%;
+}

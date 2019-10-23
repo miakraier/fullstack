@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    color: darkturquoise;
+    font-size: 2rem;
+}
+#sform{
+    border: 2px solid darkturquoise;
+    border-radius: 10% 10%;
+    width: 50%;
+    height: 40%;
+    margin: 3%;
+    padding: 2%;
+}
+#input{
+    width: 90%;
+    margin: 2%;
+}
+.btn{
+    margin: 2%; 
+}
+.card{
+    margin: 3%;
+    display: inline-block !important;
+}

@@ -1,0 +1,20 @@
+<!-- the card made in jquery without more info -->
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <h5 class="card-header">${coins[i].symbol}</h5>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-label" for="customSwitch1"></div>
+        <div class="card-body">
+          <div class="card-title">${coins[i].name}</div>
+          <button href="#" class="btn btn-info">more info</button>
+        </div>
+        <!-- with class card in jquery appen to here in btn click -->
+      </div>
+
+      <!--  -->
+      <!-- more info to aapend -->
+      <p class="card-text">USD: ${obj.current_price.usd}
+        ILS: ${obj.current_price.ils}
+        EUR: ${obj.current_price.eur}
+        <img src="..." class="card-img-top" alt="icon missing"></p>
+      <!--  -->
