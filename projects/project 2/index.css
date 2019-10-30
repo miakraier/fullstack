@@ -10,7 +10,10 @@
     background-attachment: fixed;
 }
 .title{
-    position: relative;
+    position: sticky !important;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
     color: aqua;
     font-size: 2.5rem;
     font-family: 'Monoton', cursive;
@@ -57,7 +60,7 @@ font-family: 'Notable', sans-serif;
     display: inline-block !important
         }
 .card-body{
-    margin-top: 8%;
+    margin-top: 2%;
     margin-bottom: 5%;
     font-size: 1.2rem;
         }
@@ -72,6 +75,19 @@ font-family: 'Notable', sans-serif;
     width: 20%;
     height: 10%;
         }
+        .wrap{
+            display: inline-block;
+            position: absolute !important;
+            right: 2rem;
+            top: 5rem;
+        }
 .infoOpen{
     height: 20%;   
         }
+ #load{
+display: none;
+        }
+.dropdown-menu{
+    background-color: #fff !important;
+    height: auto;
+}

@@ -10,10 +10,12 @@ this.setState({
 }
     render(){
         return(
-            <div>
+            <div className="mycomponent">
             <h1>i can write html here</h1>
            <button onClick={this.handleClick}>{this.state.counter}</button>
-           <Baby/>
+           <Baby cycle="4"/>
+           <Baby cycle="15"/>
+           <Baby cycle="70"/>
            </div>
         )
     }
@@ -22,11 +24,13 @@ this.setState({
 class Baby extends React.Component{
     render(){
         return(
-            <div>
+            <div className="baby">
                 <h1>another html</h1>
+                <h4>from cycle no. {this.props.cycle}</h4>
             </div>
         )
     }
 }
 
-ReactDOM.render(<MyComponent/>,document.getElementById('root'))
+ReactDOM.render(
+<MyComponent/>,document.getElementById('root'))

@@ -1,0 +1,58 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 15% 73% 12%;
+  grid-template-columns: repeat(12, 1fr);
+}
+header{
+  grid-column: span 12;
+  background-color: indigo
+}
+aside{
+  grid-column: span 3;
+  background-color: darkorchid;
+}
+main{
+  grid-column: span 9;
+  background-color: mediumpurple;
+  overflow: auto;
+}
+footer{
+  grid-column: span 12;
+  background-color: indigo;
+}
+.App > *{
+border: 2px black solid;
+color: white;
+}
+.navs{
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+  display: block;
+  margin-top: 7%;
+}
+marquee{
+  font-size: 1.2rem;
+  margin-bottom: 0%;
+}
+.title{
+  margin: 2%;
+  margin-top: 0%;
+}
+.carsMake{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.itemMake{
+  border: 1px solid black;
+  border-radius: 7% 7% 7% 7%;
+  margin: 7px;
+  padding: 10px;
+  color: white;
+}
+a{/*same as link*/
+  text-decoration: none;
+}
